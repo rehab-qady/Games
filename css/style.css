@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --main-color:#272B30;
+    --sec-color:#32383e;
+}
+body{
+    background-color: var(--main-color);
+    font-family: "Comfortaa", cursive;
+    color: #fff; 
+}
+.loading{
+    position: absolute;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+nav .container{
+    background-color: #3A497B;
+    top: -40px;
+}
+nav .container img{
+    width: 50px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #09c;
+}
+.navbar-nav  .nav-link.active{
+    color: #09c;
+}
+
+.badge-color{
+    background-color: var(--sec-color);
+}
+.col-md-4{
+    transition: all 0.5s;
+}
+.game:hover{
+    transform: scale(1.1);
+}
+.col-md-4:hover .layer{
+    display: none;
+}
+.layer{
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background-color: rgba(0, 0, 0, 0.5);
+ transition:all 2s;
+}
+

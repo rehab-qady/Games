@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="games2">
+      <div class="loading w-100 d-none" >
+        <span class="loader"></span>
+      </div>
+      <header class="position-relative">
+        <img src="imgs/wraper.png" class="w-100" alt="" />
+      </header>
+
+      <nav class="navbar navbar-expand-lg position-sticky" id="navId">
+        <div class="container rounded-5 position-relative">
+          <a class="navbar-brand text-white p-3">
+            <img src="imgs/logo-sm.png" alt="" class="d-inline" />
+            GAME REVIEWS
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="start"
+                  aria-current="page"
+                  href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="body w-100" data-bs-spy="scroll" data-bs-target="#navId">
+        <div class="container">
+          <div class="row" id="games">
+
+          </div>
+        </div>
+      </main>
+
+    </section>
+
+    <section id="details" class="d-none">
+    
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" ></script>
+  </body>
+</html>
